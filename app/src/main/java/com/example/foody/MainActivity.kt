@@ -11,15 +11,19 @@ import com.example.foody.databinding.ActivityMainBinding
 import com.example.foody.databinding.FragmentRecipesBinding
 
 class MainActivity : AppCompatActivity() {
+    //view Binding of activity_main layout
     private lateinit var binding: ActivityMainBinding
+    //navController
     private lateinit var navController: NavController
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //setting up viewBinding
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
+        //setting up bottomNavigationView
         val navController = findNavController(R.id.navHostFragment)
         val appBarConfiguration = AppBarConfiguration(setOf(
                 R.id.recipesFragment,
@@ -27,7 +31,9 @@ class MainActivity : AppCompatActivity() {
                 R.id.foodJokeFragment
         ))
 
+        //Accessing views from activity_main layout
         binding.bottomNavigationView.setupWithNavController(navController)
+        //setting up actionbar with navController and override onSupportNavigateUp
         setupActionBarWithNavController(navController,appBarConfiguration)
     }
 
