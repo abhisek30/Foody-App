@@ -8,4 +8,5 @@
     <string name="food_joke">Joke</string>
     <string name="food_joke_fragment">Food Joke Fragment</string>
     <string name="favorites_recipes_fragment">Favorites Recipes Fragment</string>
+    <string name="Lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec molestie nunc eros, sed fringilla felis varius in. Nulla facilisi. Vestibulum mollis maximus volutpat. Cras laoreet nec augue eu posuere. Pellentesque sagittis nec sapien at venenatis. Nullam dolor ante, elementum a interdum eget, congue eu velit. Aenean id suscipit dolor, a lobortis enim. Phasellus bibendum ante nulla, sed laoreet orci pulvinar sed. Nam pretium velit eu nunc pretium iaculis.</string>
 </resources>
