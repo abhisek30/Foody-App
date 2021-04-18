@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import com.example.foody.databinding.FragmentRecipesBinding
 
 class RecipesFragment : Fragment() {
+    //viewBinding variables
     private var _binding:FragmentRecipesBinding? = null
     private val binding get() = _binding!!
     override fun onCreateView(
@@ -18,6 +19,7 @@ class RecipesFragment : Fragment() {
         _binding = FragmentRecipesBinding.inflate(inflater,container,false)
         val view = binding.root
 
+        //recyclerView Shimmer effect(placeholder_row_layout.xml)
         binding.recyclerView.showShimmer()
 
         return view
